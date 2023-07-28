@@ -1,0 +1,205 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-size: calc(35px + 0.390625vw);
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.main-button {
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 20px 35px 20px 35px;
+  border-radius: 35px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.main-button:active {
+  transform: translateY(1.5px) translateX(1.5px);
+}
+
+.main-button:hover {
+  opacity: 0.8;
+}
+
+.bg-orange {
+  background-color: #db7c30;
+}
+
+.bg-yellow {
+  background-color: #f2c446;
+}
+
+.bg-green {
+  background-color: #23523c;
+}
+
+.bg-blue {
+  background-color: #10395d;
+}
+
+.navbar {
+  height: 125px;
+  font-size: 18px;
+}
+.navbar #nav-logo {
+  max-height: 80px;
+  padding-left: 20px;
+}
+.navbar .nav-item {
+  padding-left: 10px;
+}
+
+.page-banner__container {
+  position: relative;
+}
+.page-banner__container .page-banner__bg-img {
+  min-height: 1000px;
+  background-image: url("../images/purchasing-dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-banner__container .page-banner__text-container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  color: white;
+}
+.page-banner__container .page-banner__text-container .page-banner__head {
+  font-size: calc(50px + 0.5vw);
+  font-weight: 900;
+}
+.page-banner__container .page-banner__text-container .page-banner__text {
+  font-size: calc(20px + 0.5vw);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.site-footer__container {
+  background-color: black;
+}
+.site-footer__container .site-footer__content {
+  text-align: center;
+  padding: 7% 10% 7% 10%;
+}
+.site-footer__container .site-footer__content .site-footer__image {
+  max-width: 300px;
+  width: 90%;
+  margin: auto;
+}
+.site-footer__container .site-footer__content .site-footer__text {
+  color: white;
+  padding-top: 10px;
+  font-weight: 500;
+}
+.site-footer__container .site-footer__content .site-footer__icons {
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.5rem;
+}
+.site-footer__container .site-footer__content .fa-brands:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+.site-footer__container .site-footer__content .fa-envelope:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+.carousel-section-container {
+  text-align: center;
+  padding: 10vh 0 10vh 0;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+}
+.carousel-container .carousel {
+  max-width: 1000px;
+}
+.carousel-container .slide-row {
+  padding: 0 10% 0 10%;
+  /* fix */
+}
+.carousel-container .prev-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #10395d;
+}
+.carousel-container .next-icon {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #10395d;
+}
+.center-content__container {
+  padding: 8% 10% 8% 10%;
+  text-align: center;
+}
+.center-content__container .center-content__text {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.center-content__container img {
+  width: 90%;
+  max-width: 300px;
+}
+
+.center-content__ocean-bg {
+  background-image: url("../images/waves.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.split-content-container {
+  max-width: 100%;
+}
+.split-content-container .split-content__text {
+  padding: 8vh 5vh 8vh 5vh;
+}
+.split-content-container .feature-text {
+  font-size: calc(45px + 0.9vw);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.split-content-container .split-content__img {
+  min-height: 575px;
+  background-image: url("../images/campfire.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=styles.css.map */

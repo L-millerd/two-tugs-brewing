@@ -1,0 +1,41 @@
+.subpage-banner__container {
+  position: relative;
+}
+.subpage-banner__container .subpage-banner__bg-img {
+  min-height: 600px;
+  background-image: url("../images/theBrews.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subpage-banner__container .subpage-banner__text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.subpage-banner__container .subpage-banner__text-container .subpage-banner__head {
+  font-size: calc(75px + 5vw);
+  font-weight: 900;
+}
+
+.card-section {
+  padding: 0 0 20vh 0;
+}
+
+.card-container {
+  text-align: center;
+}
+.card-container img {
+  width: 20vw;
+  max-width: 250px;
+}
+.card-container .card-heading {
+  font-weight: 900;
+  font-size: calc(20px + 0.390625vw);
+}
+.card-container .card-text {
+  font-size: calc(12px + 0.390625vw);
+  line-height: 2;
+}/*# sourceMappingURL=pages.css.map */

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Tugs</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <!---CSSLink--->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/pages.css">
+
+
+    <!---font awesome-->
+    <script src="https://kit.fontawesome.com/fd97e4186c.js" crossorigin="anonymous"></script>
+
+    <!--favicon--->
+    <link rel="icon" href="images/favicon_TT.png" type="image/png">
+
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+        integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="JS/beers-JS.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-left" id="logo"><img id="nav-logo" src="images/logoWhite.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="brews.html">Beer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="culture.html">Our Story</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="purchasing.html">Purchasing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact2.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="subpage-banner__container">
+        <div class="subpage-banner__bg-img"></div>
+        <div class="subpage-banner__text-container">
+            <div class="subpage-banner__head">
+                BEERS
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="card-section">
+        <div class="container">
+            <div class="row">
+                <div class="card-container col-4">
+                    <img src="images/big-buoy.jpg">
+                    <div class="card-heading">Big Buoy</div>
+                    <div class="card-text">IPA</div>
+                    <div class="card-text">6.4% alc/vol | 55 IBU</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="center-content__container">
+        <div class="center-content__text">
+            <h1>TWO TUGS BEER COLLECTION</h1>
+            <p>
+                Two Tugs’ beers are a blend of traditional craftsmanship and innovative flavours, offering a diverse
+                range of styles to satisfy every palate. Each brew is crafted with premium ingredients, resulting in
+                rich, aromatic beers.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card-section">
+        <div class="container">
+            <div class="row output"></div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer__container">
+        <div class="site-footer__content">
+            <img class="site-footer__image" src="images/logoWhite.png">
+
+            <hr style="color: white; height:2px">
+
+            <div class="site-footer__icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- <script>
+        $(document).ready(function($){
+            
+        })
+    </script> -->
+</body>
+
+
+
+
+</html>
