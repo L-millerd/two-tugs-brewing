@@ -198,8 +198,17 @@ h1 {
 }
 .split-content-container .split-content__img {
   min-height: 575px;
-  background-image: url("../images/campfire.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.split-content-container .bg_campfire {
+  background-image: url("../images/campfire.jpg");
+}
+.split-content-container .bg_founders {
+  background-image: url("../images/founders.jpg");
+}
+
+.content-padding {
+  padding: 10%;
 }/*# sourceMappingURL=styles.css.map */

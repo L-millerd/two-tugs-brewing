@@ -261,10 +261,22 @@ h1{
     }
     .split-content__img{
         min-height: 575px;
-        background-image: url("../images/campfire.jpg");
+        // background-image: url("../images/campfire.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .bg_campfire{
+        background-image: url("../images/campfire.jpg");
+
+    }
+
+    .bg_founders{
+        background-image: url("../images/founders.jpg");
+    }
 }
 
+.content-padding{
+    padding: 10%
+}
