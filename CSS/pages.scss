@@ -3,7 +3,7 @@
     .subpage-banner__bg-img{
         // width: 100%;
         min-height: 600px;
-        background-image: url("../images/theBrews.jpg");
+        // background-image: url("../images/theBrews.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -20,7 +20,8 @@
             font-size: calc(75px + 5vw);
             // font-size: 15vw;
             font-weight: 900;
-            // line-height: 1.2;
+            text-align: center;
+            line-height: 1.2;
         }
     }
 }
@@ -46,4 +47,10 @@
     }
 }
 
-//our 
+//our story
+.team-photo__container{
+    min-height: 800px;
+    background-image: url("../images/team.jpg");
+    background-position: top;
+    background-size: cover;
+}
