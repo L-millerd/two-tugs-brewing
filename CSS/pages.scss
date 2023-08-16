@@ -28,13 +28,14 @@
 
 //brews
 .card-section{
-    padding: 0 0 20vh 0;
+    padding-bottom: 20vh;
 }
 .card-container{
     text-align: center;
 
     img{
-        width: 20vw;
+        // width: 20vw;
+        min-width: 150px;
         max-width:250px;
     }
     .card-heading{

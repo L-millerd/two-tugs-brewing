@@ -22,6 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  
   <!---CSSLink--->
   <link rel="stylesheet" href="CSS/styles.css">
 
@@ -35,6 +36,10 @@
 
   <!--favicon--->
   <link rel="icon" href="images/favicon_TT.png" type="image/png">
+
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/splide-sea-green.min.css">
+
 
 </head>
 
@@ -104,32 +109,24 @@
   <div class="carousel-section-container">
     <h1 class="st1">EXPLORE OUR BEERS</h1>
 
-    <div class="carousel-container st2">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="slide-row row">
-              <div class="col"> <img class="d-block w-100" src="images/big-rig.jpg" alt="First slide"></div>
-              <div class="col"> <img class="d-block w-100 col-4" src="images/docksider.jpg" alt="Second slide"></div>
-              <div class="col"> <img class="d-block w-100 col-4" src="images/the-captain.jpg" alt="Third slide"> </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="slide-row row">
-              <div class="col"> <img class="d-block w-100" src="images/high-and-dry.jpg" alt="First slide"> </div>
-              <div class="col"> <img class="d-block w-100 col-4" src="images/big-buoy.jpg" alt="Second slide"> </div>
-              <div class="col"> <img class="d-block w-100 col-4" src="images/white-whale.jpg" alt="Third slide"> </div>
-            </div>
+    <section>
+      <div class="container st2">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img class="img-fluid" src="images/big-rig.jpg" alt="big-rig"></li>
+              <li class="splide__slide"><img class="img-fluid" src="images/docksider.jpg" alt="docksider"></li>
+              <li class="splide__slide"><img class="img-fluid" src="images/the-captain.jpg" alt="the-captain"></li>
+              <li class="splide__slide"><img class="img-fluid" src="images/white-whale.jpg" alt="white-whale"></li>
+              <li class="splide__slide"><img class="img-fluid" src="images/high-and-dry.jpg" alt="high-and-dry"></li>
+              <li class="splide__slide"><img class="img-fluid" src="images/big-buoy.jpg" alt="big-buoy"></li>
+            </ul>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <div class="prev-icon"></div>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <div class="next-icon"></div>
-        </a>
       </div>
-    </div>
+    </section>
+
+
 
     <div class="st3">
       <button class="main-button bg-blue" onclick="location.href = 'brews.html'">See More</button>
@@ -153,7 +150,7 @@
     </div>
   </div>
 
-  <div class="center-content__container center-content__ocean-bg">
+  <div class="center-content__ocean-bg">
     <div class="center-content__text">
       <h1 class="st6">Down The Hatch</h1>
       <p class="st7">
@@ -191,6 +188,33 @@
   <!-- Javascript -->
   <script src="JS/index-JS.js"></script>
 
+  <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <script>
+    var splide = new Splide('.splide', {
+      type   : 'loop',
+      focus: 0,
+      omitEnd: true,
+      gap: '2rem',
+      perPage: 4,
+
+      breakpoints: {
+        1200:{
+          perPage: 3,
+        },
+        765:{
+          perPage: 2,
+          gap: "1rem"
+        },
+        350:{
+          perPage: 1,
+          gap: "0rem"
+        }
+      }
+    });
+
+    splide.mount();
+  </script>
 
 </body>
 

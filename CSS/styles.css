@@ -134,32 +134,13 @@ h1 {
   text-align: center;
   padding: 10vh 0 10vh 0;
 }
-
-.carousel-container {
+.carousel-section-container .splide-container {
+  max-width: 90%;
+  width: 900px;
   display: flex;
   justify-content: center;
 }
-.carousel-container .carousel {
-  max-width: 1000px;
-}
-.carousel-container .slide-row {
-  padding: 0 10% 0 10%;
-  /* fix */
-}
-.carousel-container .prev-icon {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 20px solid #10395d;
-}
-.carousel-container .next-icon {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 20px solid #10395d;
-}
+
 .center-content__container {
   padding: 8% 10% 8% 10%;
   text-align: center;
@@ -169,12 +150,11 @@ h1 {
   max-width: 1200px;
   margin: auto;
 }
-.center-content__container img {
-  width: 90%;
-  max-width: 300px;
-}
 
 .center-content__ocean-bg {
+  padding: 10vh 5vh 5vh 5vh;
+  min-height: 450px;
+  text-align: center;
   background-image: url("../images/waves.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -183,12 +163,27 @@ h1 {
   display: flex;
   align-items: center;
 }
+.center-content__ocean-bg .center-content__text {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.center-content__container {
+  padding: 15vh 5vh 5vh 5vh;
+  text-align: center;
+}
+.center-content__container .center-content__text {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
 
 .split-content-container {
   max-width: 100%;
 }
 .split-content-container .split-content__text {
-  padding: 8vh 5vh 8vh 5vh;
+  padding: 12vh 5vh 8vh 5vh;
 }
 .split-content-container .feature-text {
   font-size: calc(45px + 0.9vw);

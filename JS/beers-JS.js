@@ -53,7 +53,7 @@ $(document).ready(function () {
     for(i=0; i<beerObj.length; i++){
 
         $(".output").append(`
-        <div class="card-container col-6 col-lg-4 ${classArray[i]}">
+        <div class="card-container col-sm-12 col-md-6 col-lg-4 ${classArray[i]}">
             <img src=${beerObj[i].image}>
             <div class="card-heading">${beerObj[i].heading}</div>
             <div class="card-text">${beerObj[i].type}</div>
